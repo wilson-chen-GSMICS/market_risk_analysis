@@ -18,7 +18,7 @@ import time
 DATABASE_NAME='twse_stock_database'
 engine = sqlalchemy.create_engine('mysql+pymysql://root:PASSWORD@localhost:0000/'+DATABASE_NAME)
 tejapi.ApiConfig.api_key = "your key" #Regsiter a paid account at TEJ
-stock_list =pd.read_excel("F://2020 Quantitative Finance/TEJ台股名單.xlsx")
+stock_list =pd.read_excel("F://2020 Quantitative Finance/TWSE_Code_List.xlsx")
 stock_list=stock_list['coid'].to_list()
 ```
 
