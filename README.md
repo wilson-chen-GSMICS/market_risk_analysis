@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-# Data Science Project: Apply Machine Learning Algorithms in Predicting Stocks Return 
+# Apply Machine Learning Algorithms in Predicting Stocks Return 
 ## Using Taiwanse stock market as an example
 
 
@@ -15,10 +15,10 @@ import numpy as np
 from datetime import date,timedelta
 import matplotlib.pyplot as plt
 import time
-DATABASE_NAME='tej_stock'
-engine = sqlalchemy.create_engine('mysql+pymysql://root:Tej123456@localhost:3306/'+DATABASE_NAME)
-tejapi.ApiConfig.api_key = "IbDhqxEj1XZy9J4W9uyVd3qYa945Ve"
-stock_list =pd.read_excel("F://2019量化競賽/TEJ台股名單.xlsx")
+DATABASE_NAME='twse_stock_database'
+engine = sqlalchemy.create_engine('mysql+pymysql://root:PASSWORD@localhost:0000/'+DATABASE_NAME)
+tejapi.ApiConfig.api_key = "your key" #Regsiter a paid account at TEJ
+stock_list =pd.read_excel("F://2020 Quantitative Finance/TEJ台股名單.xlsx")
 stock_list=stock_list['coid'].to_list()
 ```
 
