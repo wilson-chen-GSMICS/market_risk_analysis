@@ -7,8 +7,6 @@
 
 ```python
 import pandas as pd
-pd.set_option('display.max_columns', 15)
-pd.set_option('display.max_rows', 15)
 import sqlalchemy 
 import tejapi
 import numpy as np
@@ -20,6 +18,9 @@ engine = sqlalchemy.create_engine('mysql+pymysql://root:PASSWORD@localhost:0000/
 tejapi.ApiConfig.api_key = "your key" #Regsiter a paid account at TEJ
 stock_list =pd.read_excel("F://2020 Quantitative Finance/TWSE_Code_List.xlsx")
 stock_list=stock_list['coid'].to_list()
+pd.set_option('display.max_columns', 15)
+pd.set_option('display.max_rows', 15)
+
 ```
 
 
